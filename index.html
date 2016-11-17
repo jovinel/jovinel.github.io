@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="assets/js/intro.js-2.3.0/intro.js"></script>
     <script>
@@ -115,7 +115,7 @@
             for (var i = 0; i < results.length; i++) {
 
               var classIndex = getRandomInt(0,2);
-              var markerIcon = "icons/" + RESTO_CLASSIFICATION_ICON[classIndex];
+              var markerIcon = "img/icons/" + RESTO_CLASSIFICATION_ICON[classIndex];
               // Use marker animation to drop the icons incrementally on the map.
               markers[last] = new google.maps.Marker({
                 position: results[i].geometry.location,
@@ -178,7 +178,7 @@
 
         var markerNumber = i.toString();
         // var markerIcon = "http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=" + markerNumber + "|FF0000|000000";
-        var markerIcon = "icons/" + RESTO_CLASSIFICATION_ICON[classification];
+        var markerIcon = "img/icons/" + RESTO_CLASSIFICATION_ICON[classification];
 
         // var markerLetter = String.fromCharCode('A'.charCodeAt(0) + i);
         // var markerIcon = MARKER_PATH + markerLetter + '.png';
